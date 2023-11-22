@@ -7,7 +7,7 @@ import axios  from "axios"
 export const getproduct = createAsyncThunk(
     "product/getproduct",
     async()=>{
- const {data} = await axios.get("http://localhost:9000/products")
+ const {data} = await axios.get("https://mern-backnend.vercel.app/products")
 return data.data;
 // console.log(data)
     }
